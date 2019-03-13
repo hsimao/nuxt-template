@@ -1,10 +1,8 @@
-# BPSDesign
-
-> My groovy Nuxt.js project
+# Nuxt Template
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 

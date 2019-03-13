@@ -1,28 +1,20 @@
 <template>
   <div>
-    <!-- 多語系選單範例 下拉式 -->
-    <select v-model="$i18n.locale" @change="changeLang()">
-      <option v-for="(lang, i) in langs" :key="`Lang${i}`"
-        :value="lang">{{ lang }}</option>
-    </select>
-    <!-- 多語系顯示範例 -->
-    <p> meta title: {{ $t('meta.title') }}</p>
-    <p> meta desc : {{ $t('meta.description') }}</p>
+    <Header />
     <nuxt />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from '~/components/Header'
+import Footer from '~/components/Footer'
+
 export default {
   name: 'layout',
-  data() {
-    return { langs: ['zh', 'en'] }
-  },
-  methods: {
-    changeLang() {
-      // 儲存到 cooike
-      document.cookie = 'locale=' + this.$i18n.locale
-    }
+  components: {
+    Footer,
+    Header
   }
 }
 </script>

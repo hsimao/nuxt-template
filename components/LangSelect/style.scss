@@ -1,0 +1,20 @@
+.langSelect {
+}
+
+.Header__Link {
+  font-size: 16px;
+  color: $colorPrimary;
+  border: 1px solid $colorPrimary;
+  padding: 7px 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.Header__Link:hover {
+  color: #2e2f30;
+  background-color: $colorPrimary;
+}
+.nuxt-link-active {
+  color: cyan;
+}

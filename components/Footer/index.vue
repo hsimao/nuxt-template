@@ -1,12 +1,12 @@
 <template>
-  <div class="{{camelCase name}}">
-    <h1>{{ camelCase name }}</h1>
+  <div class="footer">
+    <h1>footer</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: '{{ camelCase name }}'
+  name: 'Footer'
 }
 </script>
 

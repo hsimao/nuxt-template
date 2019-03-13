@@ -13,11 +13,11 @@
     "contact": "contact"
   },
   "home": {
-    "title": "Welcome",
-    "introduction": "This is an introduction in English."
+    "title": "Home",
+    "desc": "This is an introduction in English."
   },
   "about": {
     "title": "About",
-    "introduction": "This page is made to give you more informations."
+    "desc": "This page is made to give you more informations."
   }
 }

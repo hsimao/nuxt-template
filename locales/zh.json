@@ -14,10 +14,10 @@
   },
   "home": {
     "title": "首頁",
-    "introduction": "Ceci est un texte d'introduction en Français."
+    "desc": "首頁說明....."
   },
-  "schools": {
-    "title": "學校",
-    "introduction": "Cette page est faite pour vous donner plus d'informations."
+  "about": {
+    "title": "關於我們",
+    "desc": "關於我們......"
   }
 }
