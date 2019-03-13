@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "布札空間創藝 B.P.S Design",
+    "description": "前身是由陳雅昌(Jack Interion Stuido)個人工作室發展而來，1998年於高雄創立。2007年陳淑鈴加入改制為建築室內設計裝修公司，陳雅昌建築室內設計師帶領建築、室內裝修設計及工程團隊創作、建造多樣貌作品，從室內空間到整棟建築都呈現堅實持衡風格和水準。"
+  },
+  "links": {
+    "en": "英文",
+    "zh": "中文",
+    "home": "首頁",
+    "about": "關於我們",
+    "schools": "學校介紹",
+    "courses": "課程介紹",
+    "contact": "聯絡我們"
+  },
+  "home": {
+    "title": "首頁",
+    "introduction": "Ceci est un texte d'introduction en Français."
+  },
+  "schools": {
+    "title": "學校",
+    "introduction": "Cette page est faite pour vous donner plus d'informations."
+  }
+}

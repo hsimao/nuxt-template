@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "B.P.S Design",
+    "description": "The predecessor was developed by Jack Interion Stuido's personal studio and was founded in Kaohsiung in 1998. In 2007, Chen Shuling joined the restructuring of the interior design and decoration company. Chen Yachang's architectural interior designers led the construction, interior decoration design and engineering team to create and construct a variety of works, from the interior space to the entire building, showing a solid balance style and standard."
+  },
+  "links": {
+    "en": "en",
+    "zh": "zh",
+    "home": "home",
+    "about": "about",
+    "schools": "schools",
+    "courses": "courses",
+    "contact": "contact"
+  },
+  "home": {
+    "title": "Welcome",
+    "introduction": "This is an introduction in English."
+  },
+  "about": {
+    "title": "About",
+    "introduction": "This page is made to give you more informations."
+  }
+}
