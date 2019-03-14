@@ -15,6 +15,7 @@ const createStore = () => {
   return new Vuex.Store({
     state: {
       testData: [],
+      originUrl: '',
       locales: ['zh', 'en'],
       locale: 'zh'
     },
@@ -23,6 +24,9 @@ const createStore = () => {
         if (state.locales.indexOf(locale) !== -1) {
           state.locale = locale
         }
+      },
+      SET_ORIGIN_URL(state, originUrl) {
+        state.originUrl = originUrl
       },
       SET_TESTDATA(state, payload) {
         state.testData = payload
@@ -65,7 +69,8 @@ const createStore = () => {
     getters: {
       testData: state => state.testData,
       locales: state => state.locales,
-      locale: state => state.locale
+      locale: state => state.locale,
+      originUrl: state => state.originUrl
     }
   })
 }

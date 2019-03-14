@@ -36,6 +36,19 @@ export default function({ isHMR, app, store, route, params, error, redirect, req
 
   // Set locale
   store.commit('SET_LANG', locale)
+
+  // 過濾掉語系前綴，取得原始網址並儲存到 vuex store
+  function originURL()  {
+    let url = route.fullPath
+    store.state.locales.forEach(item => {
+      if (!route.fullPath.indexOf(`/${item}/`)) {
+        url = route.fullPath.replace(`/${item}/`, '/')
+      }
+    })
+    return url
+  }
+  store.commit('SET_ORIGIN_URL', originURL())
+
   app.i18n.locale = store.state.locale
   // If route is /<defaultLocale>/... -> redirect to /...
   if (locale === defaultLocale && route.fullPath.indexOf('/' + defaultLocale) === 0) {

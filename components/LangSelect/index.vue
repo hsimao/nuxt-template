@@ -37,17 +37,29 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'langSelect',
   computed: {
-    ...mapGetters(['locales'])
+    ...mapGetters(['locales', 'originUrl'])
   },
   methods: {
     // 下拉式
     changeLangSelect() {
+      this.changeUrl()
       document.cookie = 'locale=' + this.$i18n.locale
     },
     // 點選式
     changeLangBtn(lang) {
-      document.cookie = 'locale=' + lang
       this.$i18n.locale = lang
+      document.cookie = 'locale=' + lang
+      this.changeUrl()
+    },
+    // 判斷當下語系並更新網址
+    changeUrl() {
+      // 如果為預設語系 直接返回原始網址，不加前綴
+      if (this.$i18n.fallbackLocale === this.$i18n.locale) {
+        this.$router.push(this.originUrl)
+      } else {
+        // 非預設語系 加上語系前綴
+        this.$router.push(this.$i18n.locale + this.originUrl)
+      }
     }
   }
 }
