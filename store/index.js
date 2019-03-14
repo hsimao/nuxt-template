@@ -16,7 +16,7 @@ const createStore = () => {
     state: {
       testData: [],
       originUrl: '',
-      locales: ['zh', 'en'],
+      locales: ['zh', 'en', 'jp'],
       locale: 'zh'
     },
     mutations: {
